@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">   
+        <title>Encriptador De Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+ <body>
+        <header>
+            <h1>Encriptador De Texto</h1>
+       </header>
+       <img class="candado" src="imagenes/candado.jpg" alt="candado">
+        <main>
+            <section>
+                <textarea class="text-area" cols="40" rows="20" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                     <h6 class="informacion">&#9940 Solo letras minusculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensaje" cols="35,5" rows="20"></textarea>
+                <div>
+                    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </section>
+        </main>
+<script src="script.js"></script>
+<footer>
+    <p class="copyright">&copy Copyright Daniel Bedoya - 2024</p>
+</footer>
+</body>
+</html>
